@@ -15,7 +15,7 @@ h1 {
     color: steelblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -24,7 +24,7 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
 }
 
 body {
@@ -33,4 +33,29 @@ body {
 
 h1 {
     font-family: 'Rock Salt';
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(218, 94, 32);
+    padding: 2px;
+    background-color: rgb(140, 181, 167);
+    color: rgb(6, 2, 21);
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: auto;
+    border-top: 5px solid black;
+    text-align: center;
 }
