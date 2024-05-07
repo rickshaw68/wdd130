@@ -36,7 +36,7 @@ body {
     background-color: rgb(92, 140, 140);
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Rock Salt';
 }
 
@@ -54,7 +54,7 @@ header {
     --paragraph-font: 'Roboto', serif;
     --navigation-background-color: rgb(4, 85, 118);
     --navigation-link-color: rgb(219, 200, 94);
-    --navigation-hover-color: #670909;
+    --navigation-hover-link-color: #670909;
     --navigation-hover-background: #676767;
     --paragraph-font: Arial, sans-serif;
 
