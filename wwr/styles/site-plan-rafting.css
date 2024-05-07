@@ -38,6 +38,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Rock Salt';
+    color: blue;
 }
 
 header {
@@ -46,16 +47,16 @@ header {
 }
 
 :root {
-    --primary-color: #5f1f04;               /* Main color */
-    --secondary-color: #bfae48;             /* Secondary color */
-    --accent1-color: #39146339;             /* Accent color 1 */
-    --accent2-color: #3a0842;               /* Accent color 2 */
-    --heading-font: 'Rock Salt', serif;     /* Font for headings */
-    --paragraph-font: 'Roboto', serif;      /* Font for paragraphs */
-    --nav-background-color: rgb(4, 85, 118);          /* Navigation background color */
-    --nav-link-color: rgb(219, 200, 94);               /* Navigation link color */
-    --nav-hover-link-color: #670909;                   /* Navigation link color on hover */
-    --nav-hover-background-color: #676767;             /* Navigation background color on hover */
+    --primary-color: #5f1f04;              
+    --secondary-color: #bfae48;             
+    --accent1-color: #39146339;            
+    --accent2-color: #3a0842;             
+    --heading-font: 'Rock Salt', serif;    
+    --paragraph-font: 'Roboto', serif;      
+    --nav-background-color: rgb(4, 85, 118);         
+    --nav-link-color: rgb(219, 200, 94);              
+    --nav-hover-link-color: #670909;                  
+    --nav-hover-background-color: #676767;             
 }
 
 
