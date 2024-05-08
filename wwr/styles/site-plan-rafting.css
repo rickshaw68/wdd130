@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 nav {
-    background-color: var(--navigation-background-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
     padding: 10px;
 }
 
 nav a {
-    background-color: var(--navigation-link-color);
+    background-color: var(--nav-link-color);
     display: block;
     text-decoration: none;
     padding: 10px;
 }
 
 nav a:link, nav a:visited {
-    color: var(--navigation-background-color);
+    color: var(--nav-background-color);
 }
 
 nav a:hover {
-    color: var(--navigation-hover-color);
-    background-color: var(--navigation-hover-background);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 p {
@@ -30,15 +30,15 @@ p {
 }
 
 body {
-    font-family: Roboto;
+    font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
     background-color: rgb(150, 223, 223);
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Rock Salt';
-    color: blue;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 header {
@@ -51,8 +51,8 @@ header {
     --secondary-color: #bfae48;             
     --accent1-color: #39146339;            
     --accent2-color: #3a0842;             
-    --heading-font: 'Rock Salt', serif;    
-    --paragraph-font: 'Roboto', serif;      
+    --heading-font: 'Roboto', sans-serif;    
+    --paragraph-font: Arial, sans-serif;      
     --nav-background-color: rgb(4, 85, 118);         
     --nav-link-color: rgb(219, 200, 94);              
     --nav-hover-link-color: #670909;                  
