@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #5f1f04;              
+    --secondary-color: #2b0b61;             
+    --accent1-color: #39146339;            
+    --accent2-color: #3a0842;             
+    --heading-font: 'Roboto', sans-serif;    
+    --paragraph-font: Arial, sans-serif;      
+    --nav-background-color: rgb(4, 85, 118);         
+    --nav-link-color: rgb(219, 200, 94);              
+    --nav-hover-link-color: #670909;                  
+    --nav-hover-background-color: #676767;             
+}
+
+/* Body styles */
+body {
+    font-family: var(--paragraph-font);
+    background-color: rgb(150, 223, 223);
+    color: var(--secondary-color);
+    max-width: 960px;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 1em;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    padding: 25px;
+}
+
+/* Link styles */
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    padding: 10px;
+}
+
+nav a {
+    background-color: var(--nav-link-color);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-background-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Social media links */
+.social-media a {
+    text-decoration: none; 
+}
+
+/* Limit the width of the page */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative; 
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+    color: whitesmoke;
+    background-color: rgba(30, 40, 33, 0.3);
+}
+
+.hero h1 {
+    top: 20px; /* Adjust top position */
+    left: 300px; /* Adjust left position */
+}
+
+.hero article img {
+    float: right;
+    max-width: 25%;
+    height: auto;
+}
+
+.hero article {
+    top: 40%; 
+    right: 20px; 
+    background-color: rgba(180, 229, 194, 0.3);
+    padding: 20px;
+}
+
+.hero article p {
+    color: whitesmoke; 
+    background-color: rgba(20, 39, 26, 0.1);
+    font-weight: bold
+}
+
+
+
+footer {
+    margin-top: 1em;
+    border-top: 5px solid black;
+    text-align: center;
+}
