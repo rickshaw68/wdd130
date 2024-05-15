@@ -6,22 +6,39 @@
     box-sizing: border-box;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+} */
+
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
     padding: .5rem;
     color: steelblue;
     margin: 1rem;
-    font-family: 'Rock Salt'    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; 
+    margin-bottom: 1em;
+    border-bottom: 5px solid black; 
+    text-align: center  
 }
 
 main img {
@@ -44,19 +61,24 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-main {
-    max-width: 840px;
+main {    
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20em;    
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    display: block; /* Ensures margin: auto works */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 aside h2 {
@@ -69,6 +91,11 @@ footer {
     margin-top: 1em;
     border-top: 5px solid black;
     text-align: center;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 
