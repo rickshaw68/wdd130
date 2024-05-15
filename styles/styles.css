@@ -17,7 +17,7 @@
 } */
 
 nav {
-    background-color: steelblue;
+    background-color: rgb(14, 46, 72);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ nav a {
 
 h1 {
     padding: .5rem;
-    color: steelblue;
+    color: rgb(14, 46, 72);
     margin: 1rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif; 
     margin-bottom: 1em;
