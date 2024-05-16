@@ -13,12 +13,18 @@
     --nav-hover-background-color: #676767;             
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+
 /* Body styles */
 body {
     font-family: var(--paragraph-font);
     background-color: rgb(150, 223, 223);
     color: var(--secondary-color);
-    max-width: 960px;
+    max-width: 1200px;
     margin: 10px;
     padding: 20px;
 }
@@ -29,10 +35,36 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--primary-color);
 }
 
+/* Header styles */
 header {
     background-color: var(--accent1-color);
-    padding: 20px;
+    padding: 10px;
+    margin: 1rem auto;
+    border-bottom: 1px solid #0e0202;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; /* Center the header content horizontally */
 }
+
+header .grid {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.logo img {
+    margin-right: 100px;
+    width: 64px;
+    height: auto;
+}
+
+/* header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+} */
 
 /* Paragraph styles */
 p {
@@ -44,26 +76,33 @@ p {
 
 /* Link styles */
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+    font-size: 2.0rem;
+    text-align: right;
+    margin-left: 80px;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    padding: 10px;
+    align-items: center;
 }
 
-nav a {
-    background-color: var(--nav-link-color);
-    display: block;
+.navigation li {
+    margin-left: 80px; /* Adjust spacing between links */
+}
+
+.navigation a {
+    color: var(--nav-link-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-background-color);
-}
-
-nav a:hover {
+.navigation a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 /* Social media links */
@@ -85,6 +124,7 @@ nav a:hover {
 
 .hero {
     position: relative; 
+    margin-bottom: 0;
 }
 
 .hero h1,
@@ -108,20 +148,81 @@ nav a:hover {
 .hero article {
     top: 40%; 
     right: 20px; 
-    background-color: rgba(180, 229, 194, 0.3);
+    background-color: rgba(22, 25, 23, 0.3);
     padding: 20px;
 }
 
 .hero article p {
     color: whitesmoke; 
-    background-color: rgba(20, 39, 26, 0.1);
+    background-color: rgba(2, 38, 14, 0.1);
     font-weight: bold
 }
 
+.history {
+    margin-top: 0; /* Remove any top margin */
+}
 
+.centered {
+    text-align: center;
+}
+
+.adventures {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin-top as needed */
+}
+
+.adventures h2 {
+    margin-bottom: 20px; /* Add margin between h2 and images */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Add space between images */
+}
+
+.image-container figure {
+    margin: 0; /* Remove default margin */
+    text-align: left;
+}
+
+.image-container figcaption {
+    margin-top: 5px; /* Adjust spacing between image and text */
+}
+
+.image-container img {
+    width: 150px; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 40px;
+}
 
 footer {
     margin-top: 1em;
     border-top: 5px solid black;
     text-align: center;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-left: 10px; /* Add some spacing between social media icons */
+}
+
+.social-media a img {
+    width: 30px; /* Adjust the width of the social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer .copyright {
+    flex-grow: 1; /* Allow the copyright text to grow to fill the available space */
+    text-align: center; /* Center the copyright text */
 }
