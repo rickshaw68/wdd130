@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
-        <link rel="stylesheet" href="styles.css">        
-    </head>
-    <body>
-        <!-- Content goes here -->
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <Header>
+        <h1>WDD 130 | Rick Shaw | HTML Form - User Poll</h1>
+    </Header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>                
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email:</label>                
+                    <input type="text" id="usermail" name="usermail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="browser">
+                    <label for="browser">Favorite Browser</label>
+                    <select id="browser" name="browser">
+                        <option value="edge">Microsoft Edge</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="chrome">Google Chrome</option>
+                        <option value="safari">Safari</option>
+                    </select>
+                </div>
+                <div class="pet">
+                    <label for="pet1">Do you have a pet?</label>
+                    <input type="checkbox" id="pet1" name="pet1" value="Yes">
+                    <label for="pet1">Yes</label>
+                    <input type="checkbox" id="pet2" name="pet2" value="No">
+                    <label for="pet2">No</label>
+                </div>
+                <div class="lived">
+                    <label for="placeslived">Places You Have Lived</label>
+                    <textarea id="placeslived" name="placeslived" rows="4"
+                        placeholder="New York, Chicago, LA, Calgary"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" value="Submit Poll">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 | HTML Form - User Poll Activity | Rick Shaw</p>
+    </footer>
+</body>
+
 </html>

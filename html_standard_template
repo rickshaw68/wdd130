@@ -8,6 +8,14 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <!-- Content goes here -->
+        <Header>
+            <!-- Content goes here -->
+        </Header>
+        <main>
+            <!-- Content goes here -->
+        </main>
+        <footer>
+            <!-- Content goes here -->
+        </footer>
     </body>
 </html>
