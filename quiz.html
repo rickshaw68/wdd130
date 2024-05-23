@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Rick Shaw | HTML & CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>HTML & CSS QUIZ</legend>
+                <div class="form-item">
+                    <label for="q1">1. Type in a valid HTML Charset:</label>                
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="form-item">
+                    <label for="q2">2. Select the correct syntax to import fonts:</label>
+                    <select id="q2" name="q2">
+                        <option value="blank">select</option>
+                        <option value="incorrect1">import font</option>
+                        <option value="correct">@import url</option>
+                        <option value="incorrect2">import url</option>
+                        <option value="incorrect3">@import font</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="q3">3. Type in the CSS font size declaration to increase font size:</label>
+                    <textarea id="q3" name="q3" rows="4" placeholder="type your answer here"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="q4">4. How wide is my margin if I have 20px top, bottom, left, and right?</label>
+                    <input type="number" id="q4" name="q4" step="1" required>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 | HTML & CSS Quiz | Rick Shaw</p>
+    </footer>
+</body>
+
+</html>

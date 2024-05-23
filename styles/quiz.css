@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5f1f04;
+    --secondary-color: #2b0b61;
+    --accent1-color: #39146339;
+    --accent2-color: #3a0842;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: Arial, sans-serif;
+    --nav-background-color: rgb(4, 85, 118);
+    --nav-link-color: rgb(52, 50, 37);
+    --nav-hover-link-color: #670909;
+    --nav-hover-background-color: #676767;
+}
+
+body {
+    font-family: var(--heading-font);
+    background-color: rgb(150, 223, 223);
+    color: black;
+    font-size: 1em;
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 10px;
+    margin: 1rem auto;
+    border-bottom: 1px solid #0e0202;
+    width: 650px;
+    font-size: .75rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 650px;
+    margin: 0em auto;
+    padding: 1em;
+    background-color: rgb(150, 223, 223);
+    border: 1px solid #270202;
+    border-radius: 5px;
+}
+
+form {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    background-color: rgb(61, 142, 119);
+    display: grid;
+    gap: 1rem;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    width: auto;
+    margin: .5rem 0;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+legend {
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: var(--paragraph-font);
+}
+
+label {
+    text-align: left;
+    padding-right: 20px;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: calc(100% - 10px);
+}
+
+button {
+    justify-self: center;
+    width: 100%;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem grey;
+    background-color: black;
+    color: whitesmoke;
+    padding: .75rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    color: yellowgreen;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1em;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    border-top: 2px solid black;
+    text-align: center;
+    font-size: 0.8em;
+    align-self: center;
+    display: grid;
+}
+
+.form-item {
+    display: grid;
+    gap: .5rem;
+}
+
+.fonts,
+.fontsize,
+.number-input {
+    margin-bottom: 1em;
+}
