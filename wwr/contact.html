@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rick Shaw | Contact Us | Rocky Mountain Rapids</title>
+        <meta name="description" content="Rafting Contact Us Page">
+        <meta name="author" content="Rick Shaw">
+        <link rel="stylesheet" href="styles/rafting.css">        
+    </head>
+    <body>
+        <header>
+            <div class="grid header-grid">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Rafting Site Logo">
+                </div>                    
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trips.html">Trips</a></li>
+                        <li><a href="contact.html">Contacts</a></li>                    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="grid">
+            <main>
+                <div class="contact-container">
+                    <h2>Contact Us</h2>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> 777 Rapid Ave, Rocky Mountain City, AB T5K 4R7</p>
+                        <p><strong>Phone:</strong> (403) 123-4567</p>
+                        <p><strong>Email:</strong> info@rockymountainrapids.com</p>
+                    </div>
+                </div>
+                <div class="location-container">
+                    <h2>Our Location</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38671.992415058085!2d-116.15615017474572!3d51.4246779647748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1716429461486!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <section class="adventures">            
+            <h2>Our Team</h2>
+            <div class="image-container">                
+                <figure>
+                    <img src="images/amber1.jpg" alt="Amber">
+                    <figcaption>Amber</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/keith.jpg" alt="Keith">
+                    <figcaption>Keith</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/jasmine1.jpg" alt="jasmine">
+                    <figcaption>Jasmine</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/craig1.jpg" alt="craig">
+                    <figcaption>Craig</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/tina.jpg" alt="tina">
+                    <figcaption>Tina</figcaption>
+                </figure>
+            </div>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Contact Request</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>                
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email:</label>                
+                    <input type="text" id="usermail" name="usermail">
+                </div>
+                <div class="form-item">
+                    <label class="label-column" for="message">Purpose of Message:</label>
+                    <div>
+                        <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                </div>
+                <div class="message">
+                    <label class="label-column" for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Type your message here"></textarea>
+                </div>
+                </div>
+                <div class="newsletter">
+                    <label for="news">Would you like to receive our newsletter?</label>
+                    <input type="checkbox" id="news" name="news" value="Yes">
+                    <label for="news">Yes</label>                    
+                </div>
+                
+            </fieldset>
+            <button type="submit" value="Submit Poll">Submit Request</button>
+        </form>
+        <footer>
+            <div class="wireframe">
+                <a href="https://app.moqups.com/38Y5Al6fTzSCGc2d7dQcFw1uLZvWHOq9/view/page/ad64222d5">Wireframe</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 | Rocky Mountain Rapids | Rick Shaw</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
