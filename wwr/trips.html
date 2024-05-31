@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Shaw | Trips | Rocky Mountain Rapids</title>
+    <meta name="description" content="Our Trips">
+    <meta name="author" content="Rick Shaw">
+    <link rel="stylesheet" href="styles/rafting.css">    
+</head>
+<body>
+    <header>
+        <div class="grid header-grid">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Rafting Site Logo">
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="grid">
+        <main>
+            <div class="contact-container">
+                <h1>Rocky Mountain Rapids -- Our Trips</h1>                
+            </div>
+            <div class="hero-container">
+                <div class="hero1">
+                    <img src="images/lazyday1.avif" alt="Hero Image - Lazy Day">
+                    <h1>Idle Package</h1>
+                    <article>
+                        <img src="images/lazyday2.avif" alt="Happy Client">
+                        <p>Our Family Friendly day on the water features family fun for all ages and experiences. This trip will focus on level I and II rapids. Get ready for a relaxing fun float with our fantastic guides.</p>
+                    </article>
+                </div>
+                <div class="hero2">
+                    <img src="images/revitup1.webp" alt="Hero Image - Rev it Up">
+                    <h1>Rev It Up Package</h1>
+                    <article>
+                        <img src="images/revitup2.webp" alt="Happy Client">
+                        <p>Our Rev It Up rafting package takes you to the next level. This trip focuses on class II and III rapids. With this trip, you will enjoy the great outdoors while you experience the perfect mix of exciting white water rapids with a little bit of calm river in between to allow you to catch your breath and get ready for the next challenge.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="hero3">
+                <img src="images/donthurtme2.jpg" alt="Hero Image - Don't Hurt Me">
+                <h1>Throttle Package - All The Rapids You Can Handle</h1>
+                <article>
+                    <img src="images/donthurtme1.webp" alt="Rough Rapids">
+                    <p>Our Throttle package will take experienced rafters into the most challenging parts of the river. Here you will fulfill your need for heart-thumping, exhilarating, exciting, and challenging whitewater thrills. This trip is only for adults with significant experience where you will ride with other experienced rafters to work as a team to conquer all that the river has to offer. This trip is not for the faint of heart. There is no resting on this trip; there will be all the adrenaline-filled excitement that you can handle, and when you are brought back to base camp after your trip, you will be ready for all the rest and relaxation you can handle.</p>
+                </article>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Pricing Request</legend>
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name:</label>                
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="usermail">Email:</label>                
+                        <input type="text" id="usermail" name="usermail">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="usernumber">phone:</label>                
+                        <input type="number" id="usernumber" name="usernumber">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose Your Trip</legend>
+                    <div class="trips">
+                        <label for="trip">My Trip</label>
+                        <select id="trip" name="trip">
+                            <option value="blank">select</option>
+                            <option value="idle">Idle</option>
+                            <option value="rev_it_up">Rev It Up</option>
+                            <option value="throttle">Throttle</option>
+                        </select>
+                    </div>
+                    <div class="time">
+                        <label for="time1">Choose your preferred time</label>
+                        <input type="checkbox" id="time1" name="time1" value="am">
+                        <label for="time1">Morning</label>
+                        <input type="checkbox" id="time2" name="time2" value="aft">
+                        <label for="time2">Afternoon</label>
+                        <input type="checkbox" id="time3" name="time3" value="pm">
+                        <label for="time3">Evening</label>
+                    </div>
+                    <div class="about">
+                        <label for="about">Tell us about you</label>
+                        <textarea id="about" name="about" rows="4"
+                            placeholder="party size, special needs, etc."></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit" value="Submit Request">Submit Request</button>
+            </form>
+            <section class="reviews">
+                <h2>Our Customer Reviews:</h2>
+                    <h5><span onclick="gfg(1)"
+                        class="rstar">★★★★★</span>
+                        Cheryl from Denver - We had the most memorable family experience imaginable.  Guides were fantastic, everyone was friendly, and this truly was a trip of a lifetime.
+                    </h5>
+                    <h5><span onclick="gfg(1)"
+                        class="rstar">★★★★★</span>
+                        David from Vancouver - I came for a true adventure, and that's exactly what I got.  Our guide, Tina, was amazing.  Super friendly and knowledgable about the river and surrounding area.  She took us on some amazing rapids and kept us all safe at the same time.  I will definately do this again!
+                    </h5>
+                    <h5><span onclick="gfg(1)"
+                        class="rstar">★★★★★</span>
+                        Mike from Idaho - I'm in love!  Everything about this place and the people is beyone amazing, I love everything about it.  I did the Rev It Up trip and it was the perfect mix of relaxing river float to exciting, heart pounding rapids.  Our guides were fantastic and entertaining.  They took great care of us from preparing us for the river to picking us up after our trip and bringing us back to base camp.  Everything was top notch and I would give 6 stars if I could.  I'll be back!
+                    </h5>
+            </section>
+            
+            <table class="trip-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Description</th>
+                        <th>Experience Level</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Idle Package</td>
+                        <td>Our Family Friendly day on the water features family fun for all ages and experiences. This trip will focus on level I and II rapids. Get ready for a relaxing fun float with our fantastic guides.</td>
+                        <td>Beginner to Intermediate</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Rev It Up Package</td>
+                        <td>Our Rev It Up rafting package takes you to the next level. This trip focuses on class II and III rapids. With this trip, you will enjoy the great outdoors while you experience the perfect mix of exciting white water rapids with a little bit of calm river in between to allow you to catch your breath and get ready for the next challenge.</td>
+                        <td>Intermediate</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Throttle Package</td>
+                        <td>Our Throttle package will take experienced rafters into the most challenging parts of the river. Here you will fulfill your need for heart-thumping, exhilarating, exciting, and challenging whitewater thrills. This trip is only for adults with significant experience where you will ride with other experienced rafters to work as a team to conquer all that the river has to offer.</td>
+                        <td>Advanced</td>
+                        <td>$200</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </main>
+    </div>
+    <footer>
+        <div class="wireframe">
+            <a href="images/trips_wireframe.png" target="_blank">View Wireframe</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 | Rocky Mountain Rapids | Rick Shaw</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
