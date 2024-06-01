@@ -678,4 +678,24 @@ button:hover {
 .trips-link:hover {
     text-decoration: underline; 
 }
-  
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #02162c; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
