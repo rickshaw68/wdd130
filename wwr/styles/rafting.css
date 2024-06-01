@@ -303,17 +303,14 @@ p {
     left: 0;
     right: 0;    
     text-align: center;
-    width: 80%;
+    
     margin: 0 auto;
 }
 
-/*.hero3 h2 {
+.hero3 h2 {
     width: 90%;
-    top: 40px;
-    left: 20px;
-    right: 0;    
-    text-align: center;
-}*/
+    top: 40px;    
+}
 
 .hero article, .hero1 article, .hero2 article, .hero3 article {
     top: 20%; 
@@ -324,7 +321,7 @@ p {
 }
 
 .hero3 article {
-    width: 80%;
+    width: 90%;
 }
 
 .hero article img, .hero2 article img {
